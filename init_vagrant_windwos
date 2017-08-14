@@ -16,3 +16,16 @@ vagrant box add envimation/ubuntu-xenial https://atlas.hashicorp.com/envimation/
 vagrant up
 #if cant launch. read issue
 #http://qiita.com/rch850/items/ba254063df4a9ff15354
+
+#access vagrant console
+vagrant ssh
+cd tensorflow
+sudo docker-compose build
+sudo docker-compose up
+#end Ctrl+C
+
+#start docker-compose
+sudo docker-compose start
+#how to access bash
+sudo docker-compose run tensorflow bash
+python script/test.py

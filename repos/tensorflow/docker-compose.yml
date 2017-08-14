@@ -1,0 +1,10 @@
+version: "2"
+
+services:
+  tensorflow:
+    build: ./containers/tensorflow
+    volumes:
+      - "./containers/tensorflow/scripts:/notebooks/scripts"
+    ports:
+      - 8888:8888
+      - 6006:6006
