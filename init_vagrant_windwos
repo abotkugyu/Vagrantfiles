@@ -1,0 +1,13 @@
+#ubuntu 16.04
+#install vargrant
+https://www.vagrantup.com/downloads.html
+
+#install virtualbox
+https://www.virtualbox.org/
+
+cd c:\
+mkdir vagrant
+cd vagrant
+mkdir ubuntu16
+cd ubuntu16
+vagrant init bento/ubuntu-16.04
