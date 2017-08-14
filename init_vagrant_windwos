@@ -1,15 +1,18 @@
 #ubuntu 16.04
+
 #install vargrant
+#used 1.9.6 (bug for 1.9.7)
 https://www.vagrantup.com/downloads.html
 
 #install virtualbox
 https://www.virtualbox.org/
 
 cd c:\
-mkdir vagrant
-cd vagrant
-mkdir ubuntu16
-cd ubuntu16
-# create Vagrantfile
+mkdir Vagrantfiles
+cd Vagrantfiles\tensorflow
+#need command?
 vagrant box add envimation/ubuntu-xenial https://atlas.hashicorp.com/envimation/boxes/ubuntu-xenial
+#
 vagrant up
+#if cant launch. read issue
+#http://qiita.com/rch850/items/ba254063df4a9ff15354
