@@ -10,4 +10,6 @@ mkdir vagrant
 cd vagrant
 mkdir ubuntu16
 cd ubuntu16
-vagrant init bento/ubuntu-16.04
+# create Vagrantfile
+vagrant box add envimation/ubuntu-xenial https://atlas.hashicorp.com/envimation/boxes/ubuntu-xenial
+vagrant up
