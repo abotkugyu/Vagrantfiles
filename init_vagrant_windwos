@@ -9,7 +9,7 @@ https://www.virtualbox.org/
 
 cd c:\
 git clone https://github.com/abotkugyu/Vagrantfiles.git
-cd Vagrantfiles\tensorflow
+cd Vagrantfiles\repos\[app]
 #need this command?
 #vagrant box add envimation/ubuntu-xenial https://atlas.hashicorp.com/envimation/boxes/ubuntu-xenial
 vagrant up
@@ -17,7 +17,9 @@ vagrant up
 #http://qiita.com/rch850/items/ba254063df4a9ff15354
 
 #access vagrant console
-vagrant ssh -- -t 'cd tensorflow; /bin/bash'
+vagrant ssh
+#more option(vagrant ssh -- -t 'cd tensorflow; /bin/bash')
+
 sudo docker-compose build
 sudo docker-compose up
 #end Ctrl+C
@@ -25,5 +27,4 @@ sudo docker-compose up
 #start docker-compose
 sudo docker-compose start
 #how to access bash
-sudo docker-compose run tensorflow bash
-python script/test.py
+sudo docker-compose run [app] bash

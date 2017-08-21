@@ -1,0 +1,3 @@
+#tensorflow
+sudo docker-compose run tensorflow bash
+python script/test.py

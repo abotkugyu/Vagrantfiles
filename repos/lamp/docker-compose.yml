@@ -1,0 +1,28 @@
+version: "2"
+
+services:
+  apache:
+    build: ./containers/apache
+    ports:
+      - 80:80
+      - 443:443
+    links:
+      - perl
+  mysql:
+    build: ./containers/mysql
+    volumes:
+      - "./data/mysql:/var/lib/mysql"
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_PASSWORD: ryouzi01
+      MYSQL_USER: abot
+      MYSQL_DB: abot
+      MYSQL_DATABASE: sample
+    expose:
+     - "3306"
+  perl:
+    build: ./containers/perl
+    volumes:
+      - "./data/html:/var/www/html"
+    links:
+      - mysql
