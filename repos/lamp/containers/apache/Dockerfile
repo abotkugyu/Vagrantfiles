@@ -1,2 +1,6 @@
 FROM httpd:2.4
-#COPY conf/default.conf /usr/local/apache2/conf/httpd.conf
+COPY conf/httpd.conf /usr/local/apache2/conf/httpd.conf
+RUN apt-get update
+RUN apt-get install -y curl perl make
+RUN curl -L https://cpanmin.us | perl - -M https://cpan.metacpan.org -n Mojolicious
+#RUN ["curl","-L","https://cpanmin.us","|","perl","-","-M","https://cpan.metacpan.org","-n","Mojolicious"]
