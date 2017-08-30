@@ -20,9 +20,7 @@ services:
       - "./log:/var/log/mysql"
     environment:
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_PASSWORD: ryouzi01
-      MYSQL_USER: abot
-      MYSQL_DB: abot
+      MYSQL_DATABASE: abot
     expose:
      - "3306"
 #  perl:

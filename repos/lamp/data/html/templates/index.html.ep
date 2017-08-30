@@ -1,0 +1,2 @@
+%= include 'common', title => 'Home';
+<h1>Test Mojolicious template</h1>
