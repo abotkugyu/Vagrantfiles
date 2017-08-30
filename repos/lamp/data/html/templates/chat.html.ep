@@ -1,21 +1,5 @@
 %= include 'common', title => 'Chat';
 <h1>Chat App</h1>
 <div>
-  <div class="row">
-    <div class="col-lg-6">
-      <div class="col-lg-6">
-        <div class="col-md-3 bg-success r-box">あああ</div>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-lg-6">
-      <div class="input-group">
-        <input type="text" class="form-control" placeholder="Speech for...">
-        <span class="input-group-btn">
-          <button class="btn btn-default" type="button">Send!</button>
-        </span>
-      </div>
-    </div>
-  </div>
+  <div id="chat" style="float:right;"></div>
 </div>
