@@ -18,7 +18,7 @@ Vagrant.configure("2") do |config|
     apt-get update
     apt-get install -y docker
     apt-get install -y docker-compose
-    docker-compose -f lamp/docker-compose.yml start
+    dpkg-reconfigure tzdata
   SHELL
   config.vm.provision "shell", run: "always", inline: "cd /home/vagrant/lamp && docker-compose start 1>&2"
 end
