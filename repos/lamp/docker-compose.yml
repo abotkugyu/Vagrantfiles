@@ -13,19 +13,18 @@ services:
 #      - perl
 #    links:
 #      - mysql
-#  mysql:
-#    build: ./containers/mysql
-#    command: bash -c 'usermod -o -u 1000 mysql; groupmod -o -g 500 mysql; chown -R mysql:root /var/run/mysqld/; /entrypoint.sh mysqld --user=mysql --console'
-#    volumes:
-#      - "./data/mysql:/var/lib/mysql"
-#      - "./log:/var/log/mysql"
-#    environment:
-#      MYSQL_ROOT_PASSWORD: root
-#      MYSQL_PASSWORD: ryouzi01
-#      MYSQL_USER: abot
-#      MYSQL_DB: abot
-#    expose:
-#     - "3306"
+  mysql:
+    build: ./containers/mysql
+    volumes:
+      - "./data/mysql:/var/lib/mysql"
+      - "./log:/var/log/mysql"
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_PASSWORD: ryouzi01
+      MYSQL_USER: abot
+      MYSQL_DB: abot
+    expose:
+     - "3306"
 #  perl:
 #    build: ./containers/perl
 #    links:

@@ -1,3 +1,3 @@
 *.vagrant/
-lamp/data/*
+repos/lamp/data/*
 .sudo_as_admin_successful
