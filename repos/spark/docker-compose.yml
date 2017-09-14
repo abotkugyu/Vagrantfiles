@@ -1,0 +1,11 @@
+version: "2"
+
+services:
+  apache:
+    build: ./containers/apache
+    volumes:
+      - "./data/html:/usr/local/apache2/cgi-bin"
+      - "./data/log:/usr/local/apache2/logs"
+    ports:
+      - 80:80
+      - 443:443

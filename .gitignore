@@ -2,3 +2,6 @@
 repos/lamp/data/log
 repos/lamp/data/mysql
 .sudo_as_admin_successful
+*.vscode
+MNIST_data
+*.log
