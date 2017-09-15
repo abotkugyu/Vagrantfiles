@@ -6,6 +6,7 @@ services:
     volumes:
       - "./data/html:/usr/local/apache2/cgi-bin"
       - "./data/log:/usr/local/apache2/logs"
+      - "./data/script:/usr/local/apache2/script"
     ports:
       - 80:80
       - 443:443
