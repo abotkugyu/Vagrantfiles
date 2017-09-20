@@ -4,13 +4,13 @@ services:
   spark:
     build: ./containers/spark
     volumes:
-      - "./data/html:/usr/local/apache2/cgi-bin"
-      - "./data/log:/usr/local/apache2/logs"
-      - "./data/script:/usr/local/apache2/script"
+      - "./data/log:/usr/local/lib/spark/logs"
+      - "./data/script:/usr/local/lib/spark/script"
       - "./data/config:/usr/local/lib/spark/conf"
     ports:
       - 80:80
       - 8080:8080
+      - 8081:8081
       - 443:443
       - 4040:4040
       - 7077:7077

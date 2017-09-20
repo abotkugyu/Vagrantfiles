@@ -1,0 +1,1 @@
+cd $SPARK_HOME && sudo ./sbin/start-master.sh && sudo ./sbin/start-slave.sh "spark://localhost:7077"

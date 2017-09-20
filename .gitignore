@@ -5,3 +5,4 @@ repos/lamp/data/mysql
 *.vscode
 MNIST_data
 *.log
+repos/**/log
