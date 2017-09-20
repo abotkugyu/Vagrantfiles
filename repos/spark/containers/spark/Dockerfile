@@ -25,6 +25,7 @@ ENV JAVA_HOME /usr/lib/jvm/java-1.8.0-openjdk-amd64
 ENV PATH $JAVA_HOME:$PATH
 ENV SPARK_HOME /usr/local/lib/spark
 ENV PATH $PATH:$SPARK_HOME/bin:$SPARK_HOME/sbin
+RUN cd /usr/local/lib/spark && sudo ./sbin/start-master.sh
 #RUN cd /spark && ./dev/change-scala-version.sh 2.11
 ##sudo update-alternatives --config java
 ##sudo update-alternatives --config javac
