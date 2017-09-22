@@ -4,8 +4,8 @@ services:
   tensorflow:
     build: ./containers/tensorflow
     volumes:
-      - "./containers/tensorflow/scripts:/notebooks/scripts"
-      - "./containers/tensorflow/data:/notebooks/data"
+      - "./data/script:/notebooks/script"
+      - "./data/doc:/notebooks/data"
     ports:
       - 8888:8888
       - 6006:6006

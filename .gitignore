@@ -6,3 +6,4 @@ repos/lamp/data/mysql
 MNIST_data
 *.log
 repos/**/log
+test.*
