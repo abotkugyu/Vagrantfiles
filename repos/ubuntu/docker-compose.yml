@@ -1,0 +1,10 @@
+version: "2"
+
+services:
+  node:
+    build: ./containers/node
+    volumes:
+      - "./containers/node/scripts:~/containers/scripts"
+    ports:
+      - 80:80
+      - 443.:443
